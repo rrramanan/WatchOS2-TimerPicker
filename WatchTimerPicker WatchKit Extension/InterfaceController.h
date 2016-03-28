@@ -25,7 +25,7 @@
 
 @property (strong, nonatomic) IBOutlet WKInterfaceButton *TimerButton;
 
-- (IBAction)TimerAction;
+- (IBAction)TimerAction; //
 
 
 @end
