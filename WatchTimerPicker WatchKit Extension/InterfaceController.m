@@ -83,7 +83,7 @@ MinFormatArray =[[NSMutableArray alloc]initWithObjects:@"00",@"01",@"02",@"03",@
     [_MIntuesLabel setText:@"00"];
     
     
-    totalTime = @"00:00";  //set this initial 
+    totalTime = @"00:00";  //set this initial*
     
 }
 
