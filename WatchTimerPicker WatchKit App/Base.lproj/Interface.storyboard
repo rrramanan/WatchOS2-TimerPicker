@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <group width="136" height="90" alignment="left" spacing="1.5" id="LDe-BM-j0h">
+                            <items>
+                                <picker width="66" height="88" alignment="left" focusStyle="sequence" id="jcv-HB-KUC">
+                                    <variation key="device=watch42mm" height="108" width="74"/>
+                                    <connections>
+                                        <action selector="HourAction:" destination="AgC-eL-Hgc" id="mUK-UG-R0Y"/>
+                                    </connections>
+                                </picker>
+                                <picker width="66" height="88" alignment="left" focusStyle="sequence" id="f9s-I6-jYF">
+                                    <variation key="device=watch42mm" height="108" width="74"/>
+                                    <connections>
+                                        <action selector="MinAction:" destination="AgC-eL-Hgc" id="cIi-Sq-0SU"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                            <variation key="device=watch42mm" height="110" spacing="5" width="154"/>
+                        </group>
+                        <group width="136" height="25" alignment="left" id="zT3-kl-Q4p">
+                            <items>
+                                <label width="65" height="24" alignment="left" text="HH" textAlignment="center" id="YFF-eU-CbB">
+                                    <variation key="device=watch42mm" width="65"/>
+                                </label>
+                                <label width="64" height="24" alignment="left" text="MM" textAlignment="center" id="JSk-13-3Kb">
+                                    <variation key="device=watch42mm" width="64"/>
+                                </label>
+                            </items>
+                            <variation key="device=watch42mm" spacing="21" width="154"/>
+                        </group>
+                        <button width="135" height="28" alignment="left" title="HH:MM" id="Wo5-7K-5r1">
+                            <variation key="device=watch42mm" width="154"/>
+                            <connections>
+                                <action selector="TimerAction" destination="AgC-eL-Hgc" id="JR3-6r-PgO"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="Hour" destination="jcv-HB-KUC" id="fhy-2u-bYH"/>
+                        <outlet property="HourLabel" destination="YFF-eU-CbB" id="gsZ-FP-8tz"/>
+                        <outlet property="MIn" destination="f9s-I6-jYF" id="Al1-Gx-vLM"/>
+                        <outlet property="MIntuesLabel" destination="JSk-13-3Kb" id="EoF-Nu-x7p"/>
+                        <outlet property="TimerButton" destination="Wo5-7K-5r1" id="ABn-7e-iIg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1025" y="476"/>
+        </scene>
+    </scenes>
+</document>
